@@ -1,4 +1,11 @@
 <main>
+  <script>
+    $(function () {
+      $("body").prepend(`<div id="header-container"></div>`);
+      $("#header-container").load("header.html");
+    });
+  </script>
+
   <h1>Bacon-Wrapped Scallops</h1>
   <p>
     <b

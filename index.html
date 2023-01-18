@@ -6,27 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Oriokie Kitchen Recipes</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"
+    ></script>
   </head>
+
   <body>
-    <h1>Valentine's Day Recipes</h1>
-    <h4>
-      <em
-        >Make Valentine's Day special. Find romantic dinner and dessert recipes
-        for your sweetie, plus fun cookies for the kids.</em
-      >
-    </h4>
+    <div id="header"></div>
+    <div class="heade">
+      <h1>Valentine's Day Recipes</h1>
+      <h4>
+        <em
+          >Make Valentine's Day special. Find romantic dinner and dessert
+          recipes for your sweetie, plus fun cookies for the kids.</em
+        >
+      </h4>
+    </div>
 
-    <img src="./images/index.jpg" />
-
-    <h3>Check Our Offerings</h3>
-    <ul>
-      <li>
-        <a href="./recipes/Bacon-Wrapped-Scallops.html"
-          >Bacon-Wrapped Scallops
-        </a>
-      </li>
-    </ul>
-
-    <script src="index.js"></script>
+    <div>
+      <img src="./images/index.jpg" />
+    </div>
+    <div>
+      <h3>Check Our Offerings</h3>
+      <ul>
+        <li>
+          <a href="./recipes/Bacon-Wrapped-Scallops.html"
+            >Bacon-Wrapped Scallops
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script>
+      $("#header").load("header.html", function () {
+        alert("Load was performed.");
+      });
+    </script>
   </body>
 </html>
