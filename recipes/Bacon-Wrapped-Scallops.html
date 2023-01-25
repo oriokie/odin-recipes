@@ -1,10 +1,24 @@
 <main>
-  <script>
-    $(function () {
-      $("body").prepend(`<div id="header-container"></div>`);
-      $("#header-container").load("header.html");
-    });
-  </script>
+  <link rel="stylesheet" href="../style.css" />
+
+  <header class="header">
+    <nav class="header__nav" id="navbar">
+      <ul class="header__list">
+        <li class="header__item">
+          <a href="../index.html" class="header__link">Home</a>
+        </li>
+        <li class="header__item">
+          <a href="../index.html" class="header__link">About</a>
+        </li>
+        <li class="header__item">
+          <a href="../index.html" class="header__link">Services</a>
+        </li>
+        <li class="header__item">
+          <a href="../index.html" class="header__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
   <h1>Bacon-Wrapped Scallops</h1>
   <p>
